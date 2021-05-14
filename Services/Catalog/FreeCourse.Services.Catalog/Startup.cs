@@ -26,6 +26,8 @@ namespace FreeCourse.Services.Catalog
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddAutoMapper(typeof(Startup));// startup dahil olduðu tüm assemblyler de Mapper arayacak
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
