@@ -20,7 +20,8 @@ namespace FreeCourse.Services.Catalog.Controllers
         {
             _courseService = courseService;
         }
-      
+
+        [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             var response = await _courseService.GetAllAsync();
@@ -38,6 +39,7 @@ namespace FreeCourse.Services.Catalog.Controllers
             return CreateActionResultInstance(response);
         }
 
+        [HttpGet]
         //[HttpGet("{userId}")]  GetById ile karşımasın diye burası için Route yazıp kullanıyoruz.
         [Route("/api/[controller]/GetAllByUserId/{userId}")]
         public async Task<IActionResult> GetAllByUserId(string userId)
