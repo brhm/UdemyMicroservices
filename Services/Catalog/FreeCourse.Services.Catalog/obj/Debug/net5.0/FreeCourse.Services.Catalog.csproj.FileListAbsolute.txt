@@ -43,3 +43,10 @@ C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Catalog\FreeCo
 C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
 C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\FreeCourse.Shared.dll
 C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\FreeCourse.Shared.pdb
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
