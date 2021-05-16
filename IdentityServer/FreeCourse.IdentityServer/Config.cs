@@ -4,6 +4,7 @@
 
 using IdentityServer4;
 using IdentityServer4.Models;
+using System;
 using System.Collections.Generic;
 
 namespace FreeCourse.IdentityServer
@@ -19,7 +20,11 @@ namespace FreeCourse.IdentityServer
         public static IEnumerable<IdentityResource> IdentityResources =>
                    new IdentityResource[]
                    {
-            
+                    new IdentityResources.Email(),
+                    new IdentityResources.OpenId(),
+                    new IdentityResources.Profile(),
+                    new IdentityResource(){Name="roles",DisplayName="Roles", Description="Kullanıcı Rolleri",UserClaims=new []{"role"}}
+
                    };
 
         public static IEnumerable<ApiScope> ApiScopes =>
@@ -41,8 +46,27 @@ namespace FreeCourse.IdentityServer
                     ClientSecrets={new Secret("secret".Sha256())},
                     AllowedGrantTypes=GrantTypes.ClientCredentials,
                     AllowedScopes={ "catalog_fullpermission", "photo_stock_fullpermission",IdentityServerConstants.LocalApi.ScopeName } // buradan clientın hangi scopelara erişeceğini mapliyoruz.
+                },
+                 new Client
+                {
+                    ClientName="Asp.Net Core MVC",
+                    ClientId="WebMvcClientForUser",
+                    AllowOfflineAccess=true,
+                    ClientSecrets={new Secret("secret".Sha256())},
+                    AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
+                    AllowedScopes={IdentityServerConstants.StandardScopes.Email,
+                     IdentityServerConstants.StandardScopes.OpenId,
+                     IdentityServerConstants.StandardScopes.Profile,
+                     IdentityServerConstants.StandardScopes.OfflineAccess,
+                     IdentityServerConstants.LocalApi.ScopeName,
+                     "roles"
+                     },
+                    AccessTokenLifetime=1*60*60, // 1 saate denk geliyor.
+                    RefreshTokenExpiration=TokenExpiration.Absolute,
+                    AbsoluteRefreshTokenLifetime=(int)(DateTime.Now.AddDays(60)-DateTime.Now).TotalSeconds,
+                    RefreshTokenUsage=TokenUsage.ReUse
                 }
-              
+
             };
     }
 }
