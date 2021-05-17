@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\helpdesk5\\Desktop\\brhm\\Udemy\\UdemyMicroservices\\Shared\\FreeCourse.Shared\\FreeCourse.Shared.csproj": {}
+    "C:\\Users\\helpdesk5\\Desktop\\brhm\\Udemy\\UdemyMicroservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\FreeCourse.Services.PhotoStock.csproj": {}
   },
   "projects": {
-    "C:\\Users\\helpdesk5\\Desktop\\brhm\\Udemy\\UdemyMicroservices\\Shared\\FreeCourse.Shared\\FreeCourse.Shared.csproj": {
+    "C:\\Users\\helpdesk5\\Desktop\\brhm\\Udemy\\UdemyMicroservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\FreeCourse.Services.PhotoStock.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\helpdesk5\\Desktop\\brhm\\Udemy\\UdemyMicroservices\\Shared\\FreeCourse.Shared\\FreeCourse.Shared.csproj",
-        "projectName": "FreeCourse.Shared",
-        "projectPath": "C:\\Users\\helpdesk5\\Desktop\\brhm\\Udemy\\UdemyMicroservices\\Shared\\FreeCourse.Shared\\FreeCourse.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\helpdesk5\\Desktop\\brhm\\Udemy\\UdemyMicroservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\FreeCourse.Services.PhotoStock.csproj",
+        "projectName": "FreeCourse.Services.PhotoStock",
+        "projectPath": "C:\\Users\\helpdesk5\\Desktop\\brhm\\Udemy\\UdemyMicroservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\FreeCourse.Services.PhotoStock.csproj",
         "packagesPath": "C:\\Users\\helpdesk5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\helpdesk5\\Desktop\\brhm\\Udemy\\UdemyMicroservices\\Shared\\FreeCourse.Shared\\obj\\",
+        "outputPath": "C:\\Users\\helpdesk5\\Desktop\\brhm\\Udemy\\UdemyMicroservices\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -21,15 +21,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -40,8 +40,14 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

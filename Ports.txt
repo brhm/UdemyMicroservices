@@ -1,2 +1,6 @@
 Services
-	-catalogApi=>http://localhost:5011
+	-catalogApi				=>5011
+	-photoStockApi		=>5012
+
+
+IdentityServer				=>5001
