@@ -36,3 +36,10 @@ C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Basket\FreeCou
 C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Basket\FreeCourse.Services.Basket\obj\Debug\net5.0\ref\FreeCourse.Services.Basket.dll
 C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Basket\FreeCourse.Services.Basket\obj\Debug\net5.0\FreeCourse.Services.Basket.pdb
 C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Basket\FreeCourse.Services.Basket\obj\Debug\net5.0\FreeCourse.Services.Basket.genruntimeconfig.cache
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Basket\FreeCourse.Services.Basket\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Basket\FreeCourse.Services.Basket\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Basket\FreeCourse.Services.Basket\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Basket\FreeCourse.Services.Basket\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Basket\FreeCourse.Services.Basket\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Basket\FreeCourse.Services.Basket\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\helpdesk5\Desktop\brhm\Udemy\UdemyMicroservices\Services\Basket\FreeCourse.Services.Basket\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
