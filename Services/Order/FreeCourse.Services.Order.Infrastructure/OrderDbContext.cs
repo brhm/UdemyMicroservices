@@ -5,7 +5,7 @@ namespace FreeCourse.Services.Order.Infrastructure
 {
     public class OrderDbContext:DbContext
     {
-        public const string DEFAULT_SCHEMA = "ordering";
+        //public const string DEFAULT_SCHEMA = "ordering";
 
         public OrderDbContext(DbContextOptions<OrderDbContext> options):base(options)
         {
@@ -15,8 +15,8 @@ namespace FreeCourse.Services.Order.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Domain.OrderAggregate.Order>().ToTable("Orders", DEFAULT_SCHEMA);
-            modelBuilder.Entity<Domain.OrderAggregate.OrderItem>().ToTable("Orders", DEFAULT_SCHEMA);
+            modelBuilder.Entity<Domain.OrderAggregate.Order>().ToTable("Orders");
+            modelBuilder.Entity<Domain.OrderAggregate.OrderItem>().ToTable("OrderItems");
 
             modelBuilder.Entity<Domain.OrderAggregate.OrderItem>().Property(x => x.Price).HasColumnType("decimal(18,2)");
 

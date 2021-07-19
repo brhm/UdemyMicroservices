@@ -21,7 +21,7 @@ namespace FreeCourse.Services.Order.Application.Handlers
 
         public async Task<Response<CreatedOrderDto>> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
         {
-            var newAdress = new Address(request.AdressDto.Province, request.AdressDto.District, request.AdressDto.Street, request.AdressDto.ZipCode, request.AdressDto.Line);
+            var newAdress = new Address(request.Adress.Province, request.Adress.District, request.Adress.Street, request.Adress.ZipCode, request.Adress.Line);
 
             Domain.OrderAggregate.Order newOrder = new Domain.OrderAggregate.Order(request.BuyerId, newAdress);
             request.OrderItems.ForEach(x =>
