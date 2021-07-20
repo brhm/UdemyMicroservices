@@ -13,7 +13,11 @@
       // client görmüş olduğu urller.
       "UpstreamPathTemplate": "/services/catalog/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamScheme": "http"
+      "UpstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "GatewayAuthenticationScheme",
+        "AllowedScopes": [ "catalog_fullpermission" ] //token gatewaye gelirken scope ta eğer catalog permission izni yoksa catalog servisine bağlanmasını gateway aşamasında engellemiş oluruz. 
+      }
     },
     {
       // gatewayin yönlendirdiği microserviceler.
@@ -28,7 +32,11 @@
       // client görmüş olduğu urller.
       "UpstreamPathTemplate": "/services/photostock/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamScheme": "http"
+      "UpstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "GatewayAuthenticationScheme",
+        "AllowedScopes": [ "photo_stock_fullpermission" ] //token gatewaye gelirken scope ta eğer photo stock permission izni yoksa catalog servisine bağlanmasını gateway aşamasında engellemiş oluruz. 
+      }
     },
     {
       // gatewayin yönlendirdiği microserviceler.
@@ -43,8 +51,12 @@
       // client görmüş olduğu urller.
       "UpstreamPathTemplate": "/services/basket/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamScheme": "http"
-    },
+      "UpstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "GatewayAuthenticationScheme",
+        "AllowedScopes": [ "basket_fullpermission" ]
+        }
+      },
     {
       // gatewayin yönlendirdiği microserviceler.
       "DownstreamPathTemplate": "/api/{everything}",
@@ -58,7 +70,11 @@
       // client görmüş olduğu urller.
       "UpstreamPathTemplate": "/services/discount/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamScheme": "http"
+      "UpstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "GatewayAuthenticationScheme",
+        "AllowedScopes": [ "discount_fullpermission" ]
+      }
     },
     {
       // gatewayin yönlendirdiği microserviceler.
@@ -73,7 +89,11 @@
       // client görmüş olduğu urller.
       "UpstreamPathTemplate": "/services/order/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamScheme": "http"
+      "UpstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "GatewayAuthenticationScheme",
+        "AllowedScopes": [ "order_fullpermission" ]
+      }
     },
     {
       // gatewayin yönlendirdiği microserviceler.
@@ -88,7 +108,11 @@
       // client görmüş olduğu urller.
       "UpstreamPathTemplate": "/services/fakepayment/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamScheme": "http"
+      "UpstreamScheme": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "GatewayAuthenticationScheme",
+        "AllowedScopes": [ "payment_fullpermission" ]
+      }
     }
   ],
   "GlobalConfiguration": {
